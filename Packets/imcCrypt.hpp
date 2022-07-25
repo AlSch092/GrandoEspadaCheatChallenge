@@ -6,7 +6,7 @@ namespace imcCrypt
 {
 	typedef BYTE bf_key_st;
 
-  static int GetNumBlock(const int dataLen);
+        static int GetNumBlock(const int dataLen);
   
 	static int Encrypt(const unsigned __int8 *pDataIn, unsigned __int8 *pDataOut, const int dataLen, const bf_key_st *key); //returns # of bytes encrypted
 	static void Decrypt(const unsigned __int8 *pDataIn, unsigned __int8 *pDataOut, const int dataLen, const bf_key_st *key); //this one doesnt return a length
@@ -16,5 +16,5 @@ namespace imcCrypt
 	static UINT16 _BF_encrypt(LPVOID, LPVOID);
 	static UINT16 _BF_decrypt(LPVOID, LPVOID);
   
-  static const BYTE key[] = { insert key as array here... };
+        static const BYTE key[] = { insert key as array here... };
 }
