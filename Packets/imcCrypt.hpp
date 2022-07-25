@@ -1,6 +1,7 @@
 #pragma once
 #include <Windows.h>
 
+void _memcpy(const unsigned __int8 *pDataIn, unsigned __int8 *pDataOut, const int dataLen); //normally the game calls some very large function to do a simple memcpy, we can just skip past all that and wrap our own naked function which calls C memcpy
 
 namespace imcCrypt
 {
